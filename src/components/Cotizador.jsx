@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/Cotizador.module.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
     const data = dataHoteles;
@@ -34,9 +34,9 @@ export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
     }
 
   return (
-    <div>
+    <div className={styles.cotizContainer}>
         <button type='submit' className={styles.btnCotizar} onClick={handleCotiz}>Cotizar</button>
-        <p>Tu precio estimado en dólares es de </p><span>{'US$' + cotizacion}</span>
+        <p>Tu precio estimado en dólares es de: </p><span>{'US$ ' + cotizacion}</span>
     </div>
   )
 }
