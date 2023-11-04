@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpg" href="./src/assets/btp.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Righteous&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bariloche Trip Planner</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <div class="historial"><a href="historial.html"><span title="Ver Historial">📋</span></a></div>
+  <div class=" center div-cotizador">
+    <label for="metros2">Ingresa los Metros cuadrados:</label>
+    <input type="number" id="metros2" value="20" min="20" max="500" required>
+    <div class="center separador">
+      <p class="importe">Precio estimado: $ <span id="valorPoliza">0.00</span><span class="guardar ocultar"
+          title="Guardar en historial">💾</span></p>
+    </div>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

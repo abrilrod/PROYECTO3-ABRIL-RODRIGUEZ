@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "nombre": "Hotel Patagonia View",
+        "tarifaNoche": 200,
+        "tarifaPersona": 50
+    },
+    {
+        "id": 2,
+        "nombre": "Hotel Bosque Azul",
+        "tarifaNoche": 120,
+        "tarifaPersona": 30
+    },
+    {
+        "id": 3,
+        "nombre": "Hotel Monte Nevado",
+        "tarifaNoche": 80,
+        "tarifaPersona": 20
+    },
+    {
+        "id": 4,
+        "nombre": "Hotel Lago Sereno",
+        "tarifaNoche": 300,
+        "tarifaPersona": 70
+    },
+    {
+        "id": 5,
+        "nombre": "Hotel Aire Puro",
+        "tarifaNoche": 180,
+        "tarifaPersona": 40
+    },
+    {
+        "id": 6,
+        "costoFijo": 150
+    }
+]
