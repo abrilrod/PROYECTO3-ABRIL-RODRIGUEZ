@@ -19,16 +19,7 @@ function App() {
 
   return (
     <main>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route path="/historial" element={<Historial />}></Route>
-          </Route>
-          {/* <Route path="/home" element={<App />}></Route>
-          <Route path="/about" element={<App />}></Route>
-          <Route path="*" element={<h1>Error 404 - Page not found</h1>}></Route>
-        </Routes>
-      </BrowserRouter> */}
+      {/*  */}
 
       <Header></Header>
       {/* <Outlet /> */}
