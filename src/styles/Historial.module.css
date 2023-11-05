@@ -26,3 +26,10 @@ li {
     text-align: center;
     font-size: 1.15rem;
 }
+
+.cotizUl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}

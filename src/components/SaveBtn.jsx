@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/SaveBtn.module.css'
 import Swal from 'sweetalert2'
 
-export default function SaveBtn({ cotizacionActual }) {
+export default function SaveBtn({ cotizacionActual, numDias, hotel, numPersonas }) {
     const alerta = (titulo, mensaje, icono)=> {
         Swal.fire({
             icon: icono || '', 
@@ -18,9 +18,17 @@ export default function SaveBtn({ cotizacionActual }) {
     }
 
     const saveHistorial = () => {
-        const cotizacionesGuardadas = JSON.parse(localStorage.getItem('cotizaciones')) || [];
-        cotizacionesGuardadas.push(cotizacionActual);
-        localStorage.setItem('cotizaciones', JSON.stringify(cotizacionesGuardadas));
+        const datosCotiz = {
+            fechaCotiz: new Date().toLocaleString(),
+            selectHotel: hotel,
+            nDias: numDias,
+            nPersonas: numPersonas,
+            valorCotiz: cotizacionActual 
+        }
+
+        const cotizacionesGuardadas = JSON.parse(localStorage.getItem('historialCotizaciones')) || [];
+        cotizacionesGuardadas.push(datosCotiz);
+        localStorage.setItem('historialCotizaciones', JSON.stringify(cotizacionesGuardadas));
     }
 
     const handleSave = (e) => {
