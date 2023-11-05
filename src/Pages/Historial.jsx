@@ -24,6 +24,7 @@ export default function Historial() {
                 <li>Cantidad de personas</li>
                 <li>Cotización Aproximada</li>
             </ul>
+            <hr />
             <div className={styles.tableBody}>
                 {cotizacionesGuardadas.map((cotizacion, index) => (
                 <ul key={index} className={styles.cotizUl}>
@@ -35,6 +36,7 @@ export default function Historial() {
                 </ul>
                 ))}
             </div>
-    </div></div>
+        </div>
+    </div>
   )
 }

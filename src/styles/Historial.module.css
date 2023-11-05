@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.tableContainer {
+.tableContainer { 
     width: 50%;
     background-color: #fff;
     margin: 1rem;
@@ -14,22 +14,42 @@
 }
 
 .tableHead {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem; 
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     padding: 1rem;
     list-style: none;
 }
 
-li {
+.tableHead li {
     padding: 0 1rem;
     text-align: center;
     font-size: 1.15rem;
+    font-weight: 500;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
 }
 
 .cotizUl {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px; 
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     list-style: none;
+    padding: 1rem;
+}
+
+.cotizUl li {
+    padding: 0 1rem;
+    text-align: center;
 }
