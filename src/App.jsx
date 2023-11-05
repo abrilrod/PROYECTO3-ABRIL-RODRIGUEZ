@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
-import './styles/App.css'
-import Header from './components/Header'
-import Form from './components/Form.jsx'
+import './styles/App.css';
+import Header from './components/Header';
+import Form from './components/Form.jsx';
 
 function App() {
   const [datosHoteles, setDatosHoteles] = useState([]);
@@ -19,10 +19,8 @@ function App() {
 
   return (
     <main>
-      {/*  */}
-
-      <Header></Header>
       {/* <Outlet /> */}
+      <Header></Header>
       <Form dataHoteles={datosHoteles}></Form>
     </main>
   )

@@ -40,21 +40,10 @@ header div {
     flex-direction: column;
     color: #ffffff;
 }
+
 h1 {
     padding: 1rem 2rem;
     font-size: 3rem;
     line-height: 1.1;
     font-family: var(--h1-font);
-}
-
-h2 {
-    padding: 0rem 2rem;
-    font-family: var(--subtitles2-font);
-    font-size: 2rem;
-}
-
-h3 {
-    padding: 1rem 2rem;
-    font-family: var(--subtitles2-font);
-    font-size: 1.25rem;
 }

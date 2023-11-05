@@ -1,3 +1,9 @@
+.formContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 form {
     display: flex;
     align-items: center;
@@ -8,4 +14,18 @@ form {
     border-radius: 1rem;
     box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
     width: 50%;
+}
+
+h2 {
+    padding: 0rem 2rem;
+    font-family: var(--subtitles2-font);
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+h3 {
+    padding: 1rem 2rem;
+    font-family: var(--subtitles2-font);
+    font-size: 1.25rem;
+    color: #ffffff;
 }

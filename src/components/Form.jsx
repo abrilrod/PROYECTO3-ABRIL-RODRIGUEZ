@@ -4,6 +4,7 @@ import SelectHotel from './SelectHotel';
 import styles from '../styles/Form.module.css';
 import InputNumber from '../components/InputNumber'
 import Cotizador from '../components/Cotizador';
+import SaveBtn from './SaveBtn';
 
 export default function Form({ dataHoteles }) {
     const [selectedHotel, setSelectedHotel] = useState('');
@@ -13,10 +14,16 @@ export default function Form({ dataHoteles }) {
 
     console.log(dataGuardada);
     console.log("Todo inicializado con éxito");
+
+
   return (
-    <form action="https://formsubmit.co/rodriguezabbril9@gmail.com" method="POST" className={styles.formContainer} onSubmit={e => {
-      e.preventDefault();
-    }}>
+    <div className={styles.formContainer}>
+      <h2>Calculá tu precio</h2>
+      <h3>Completá con los datos solicitados</h3>
+
+      <form action="https://formsubmit.co/rodriguezabbril9@gmail.com" method="POST" onSubmit={e => {
+        e.preventDefault();
+        }}>
         <SelectHotel 
           label="Selecciona el hotel"
           options={[
@@ -27,8 +34,8 @@ export default function Form({ dataHoteles }) {
             label: hotel.nombre,
             tarifaNoche: hotel.tarifaNoche,
             tarifaPersona: hotel.tarifaPersona,
-          }))
-        ]}
+            }))
+          ]}
           value={selectedHotel}
           onChange={(e) => setSelectedHotel(e.target.value)} 
           />
@@ -52,6 +59,7 @@ export default function Form({ dataHoteles }) {
           />
           
           <Cotizador dataHoteles={dataGuardada} dias={days} personas={persons} hotel={selectedHotel} />
-    </form>
+      </form>
+    </div>
   )
 }

@@ -1,18 +1,20 @@
 import React from 'react'
+import Header from './Header'
 
 export default function Historial() {
   return (
     <div>
-        <h1>Ver Historial 📋</h1>
+        <Header />
+        <h1>Ver Historial</h1>
         <div>
             <table>
                 <thead>
                     <tr>
                         <th>Fecha de cotización</th>
-                        <th>Propiedad</th>
-                        <th>Ubicación</th>
-                        <th>Metros cuadrados</th>
-                        <th>Póliza mensual</th>
+                        <th>Hotel</th>
+                        <th>Cantidad de noches</th>
+                        <th>Cantidad de personas</th>
+                        <th>Cotización Aproximada</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,8 +27,8 @@ export default function Historial() {
                     </tr>
                 </tbody>
             </table>
-        <div class="center separador">
-            <a  href="index.html"><button class="button button-outline">VOLVER</button></a>
+        <div>
+            <a  href="/"><button>VOLVER</button></a>
         </div>
     </div></div>
   )

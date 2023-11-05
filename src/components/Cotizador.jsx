@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Cotizador.module.css'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
+import SaveBtn from './SaveBtn'
 
 export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
   const alerta = (titulo, mensaje, icono)=> {
@@ -58,10 +59,13 @@ export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
         }
     }
 
+    console.log('nueva cotizacion ' + cotizacion)
+
   return (
     <div className={styles.cotizContainer}>
         <button type='submit' className={styles.btnCotizar} onClick={handleCotiz}>Cotizar</button>
         <p>Tu precio estimado en dólares es de: </p><span>{'US$ ' + cotizacion}</span>
+        <SaveBtn cotizacionActual = {cotizacion} />
     </div>
   )
 }
