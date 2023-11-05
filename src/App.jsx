@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import { Outlet, useOutlet } from 'react-router-dom'
 import './styles/App.css';
 import Header from './components/Header';
 import Form from './components/Form.jsx';
+import NavBar from './components/NavBar.jsx';
 
 function App() {
+  const outlet = useOutlet();
   const [datosHoteles, setDatosHoteles] = useState([]);
 
   useEffect(() => {
@@ -19,9 +21,10 @@ function App() {
 
   return (
     <main>
-      {/* <Outlet /> */}
+      <NavBar />
       <Header></Header>
-      <Form dataHoteles={datosHoteles}></Form>
+      {!outlet && <Form dataHoteles={datosHoteles}></Form>}
+      <Outlet />
     </main>
   )
 }
