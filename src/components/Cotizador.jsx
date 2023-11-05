@@ -41,7 +41,7 @@ export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
     console.log("datosCompletos:", datosCompletos());
 
     const handleCotiz = (e) => {
-        e.preventDefault;
+        e.preventDefault();
         if (datosCompletos()) {
           if (hotelSeleccionado && data[5]) {
               const costoEmpresa = data[5].costoFijo;
@@ -60,7 +60,7 @@ export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
     }
 
     console.log('nueva cotizacion ' + cotizacion)
-
+    
   return (
     <div className={styles.cotizContainer}>
         <button type='submit' className={styles.btnCotizar} onClick={handleCotiz}>Cotizar</button>

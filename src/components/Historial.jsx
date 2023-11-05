@@ -1,7 +1,14 @@
 import React from 'react'
 import Header from './Header'
 
-export default function Historial() {
+export default function Historial({cotizacionesData}) {
+    const [cotizacionesGuardadas, setCotizacionesGuardadas] = useState([])
+    const [historial, setHistorial] = useState(cotizacionesData);
+    function getCurrentDateTime() {
+        const now = new Date();
+        return now.toLocaleString();
+    }
+
   return (
     <div>
         <Header />

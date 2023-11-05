@@ -4,7 +4,6 @@ import SelectHotel from './SelectHotel';
 import styles from '../styles/Form.module.css';
 import InputNumber from '../components/InputNumber'
 import Cotizador from '../components/Cotizador';
-import SaveBtn from './SaveBtn';
 
 export default function Form({ dataHoteles }) {
     const [selectedHotel, setSelectedHotel] = useState('');
