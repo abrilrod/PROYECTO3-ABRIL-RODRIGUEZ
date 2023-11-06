@@ -65,7 +65,7 @@ export default function Cotizador({ dataHoteles, dias, personas, hotel }) {
     <div className={styles.cotizContainer}>
         <button type='submit' className={styles.btnCotizar} onClick={handleCotiz}>Cotizar</button>
         <p>Tu precio estimado en dólares es de: </p><span>{'US$ ' + cotizacion}</span>
-        <SaveBtn cotizacionActual = {cotizacion} numDias={qDays} hotel={hotelSeleccionado} numPersonas={qPersonas} />
+        <SaveBtn cotizacionActual={cotizacion} numDias={qDays} hotel={hotelSeleccionado} numPersonas={qPersonas} />
     </div>
   )
 }
